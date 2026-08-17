@@ -14,11 +14,11 @@ export default function App() {
     setStatus('Enviando...');
     
     try {
-      const response = await fetch('http://localhost:3000/api/contato', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
+        const response = await fetch('https://api-contabilidade-exemplo.onrender.com/api/contato', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
       
       if (response.ok) {
         setStatus('Mensagem enviada com sucesso!');
