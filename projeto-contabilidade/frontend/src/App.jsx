@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './index.css';
+import './App.css';
 
 export default function App() {
   const [formData, setFormData] = useState({ nome: '', email: '', telefone: '', mensagem: '' });
